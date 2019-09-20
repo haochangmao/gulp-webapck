@@ -1,0 +1,76 @@
+$baseFontSize : 23.4376 !default;
+
+@mixin rounded($value...) {
+    -webkit-border-radius: $value;
+    -moz-border-radius: $value;
+    -ms-border-radius: $value;
+    border-radius: $value;
+}
+
+@mixin transition($value...) {
+    -webkit-transition: $value;
+    -moz-transition: $value;
+    -ms-transition: $value;
+    transition: $value;
+}
+
+@mixin transform($value...) {
+    -webkit-transform: $value;
+    -moz-transform: $value;
+    -ms-transform: $value;
+    transform: $value;
+}
+
+@mixin animation($value...) {
+    -webkit-animation: $value;
+    -moz-animation: $value;
+    -ms-animation: $value;
+    animation: $value;
+}
+
+@mixin table-equal ($children : li) {
+    display: table;
+    table-layout: fixed;
+    width: 100%;
+    $childrenEle: li div p a span strong;
+    @if index ($childrenEle, $children) {
+    >#{$children} {
+        display: table-cell;
+    }
+} @else {
+    .#{$children} {
+        display: table-cell;
+    }
+}
+}
+
+@mixin txtColGradient($value...) {
+    background-image: linear-gradient($value);
+    background-image: -webkit-linear-gradient($value);
+    background-clip: text;
+    -webkit-background-clip: text;
+    text-fill-color: transparent;
+    -webkit-text-fill-color: transparent;
+}
+
+%justify { text-align: justify; text-justify: distribute-all-lines; -webkit-text-justify: distribute-all-lines; -moz-text-justify: distribute-all-lines;
+    &:after { content: ''; width: 100%; display: inline-block; font-size: 0; line-height: 0;}
+}
+
+@function torem($value) {
+    @return ($value / $baseFontSize * 1rem);
+}
+
+@function toPer($value) {
+    @return percentage($value);
+}
+
+$col_white : #ffffff;
+$col_body : #F8F8F8 ;
+$col_blue : #008CFF;
+$col_red : #FF461C;
+$col_black : #333333;
+$col_mod_title : #666666;
+$col_gray : #999999;
+$col_border : #cccccc;
+$col_disable : #E5E5E5;

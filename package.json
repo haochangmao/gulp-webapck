@@ -1,0 +1,63 @@
+{
+  "name": "console-h5",
+  "version": "1.0.0",
+  "description": "console-h5",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "webpack-dev-server --config webpack.dev.js --host 10.58.113.102"
+  },
+  "author": "hao",
+  "license": "ISC",
+  "babel": {
+    "presets": [
+      "es2015"
+    ]
+  },
+  "devDependencies": {
+    "babel-loader": "^6.4.1",
+    "babel-plugin-transform-runtime": "^6.23.0",
+    "babel-polyfill": "^6.26.0",
+    "babel-preset-env": "^1.6.1",
+    "babel-preset-es2015": "^6.24.0",
+    "babel-preset-es2015-loose": "^8.0.0",
+    "babel-preset-stage-0": "^6.24.1",
+    "babel-register": "^6.26.0",
+    "copy-webpack-plugin": "^4.3.1",
+    "css-loader": "^0.28.0",
+    "del": "^3.0.0",
+    "echarts": "^3.8.5",
+    "extract-text-webpack-plugin": "^3.0.2",
+    "fastclick": "^1.0.6",
+    "file-loader": "^1.1.6",
+    "graceful-fs": "^4.1.11",
+    "gulp": "^3.9.1",
+    "gulp-changed": "^3.2.0",
+    "gulp-clean": "^0.3.2",
+    "gulp-connect": "^5.2.0",
+    "gulp-plumber": "^1.2.0",
+    "gulp-util": "^3.0.8",
+    "html-loader": "^0.5.4",
+    "html-webpack-plugin": "^2.30.1",
+    "jquery": "^3.2.1",
+    "koa": "^2.4.1",
+    "koa-convert": "^1.2.0",
+    "koa-cors": "0.0.16",
+    "koa-logger": "^3.1.0",
+    "koa-router": "^7.3.0",
+    "koa-views": "^6.1.3",
+    "node-fetch": "^1.7.3",
+    "node-sass": "^4.7.2",
+    "sass-loader": "^6.0.6",
+    "style-loader": "^0.19.1",
+    "url-loader": "^0.6.2",
+    "webpack": "^3.10.0",
+    "webpack-zepto": "^0.0.1"
+  },
+  "dependencies": {
+    "gulp-connect-proxy": "^0.3.1"
+  },
+  "keywords": [
+    ""
+  ]
+}

@@ -1,0 +1,16 @@
+//{
+//  "presets": ["es2015"]
+//}
+{
+  "presets": [
+    [
+      "env", {
+      "targets": {"node": "current"},
+      "modules": false,
+      "loose": true
+    }
+    ],
+    "es2015"
+  ],
+  "plugins": ["transform-runtime"]
+}
