@@ -24,5 +24,6 @@ git 地址 ：git@legitlab.letv.cn:haochangmao/jhx_console_h5.git
 
 
 ### 注意事项
-  + gulpfile.babel.js文件轻易不要动，如果有bug或者要修改，请前告知我（康文辉）然后审核后是否修改调整
+  + gulpfile.babel.js文件轻易不要动
+  + node版本10.16.3(高版本可能有问题)
   + 该目录（指分支目录，其包含：config.json、gulpfile.babel.js、package.json、webpack.config.babel.js、src）中所有文件在上线时，一定要提交到开发主干（master）上并申请合并，在合并之后再从主干（master）上新建上线分支打包上线。如上线后删除该分支，之后新建分支进行下个开发任务。
